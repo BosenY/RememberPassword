@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Provider } from "mobx-react/native";
-import { StyleProvider } from "native-base";
+import { StyleProvider } from "native-base"; //最外层
 
 import App from "../App";
 import getTheme from "../theme/components";

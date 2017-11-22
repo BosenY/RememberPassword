@@ -8,6 +8,10 @@ export interface Props {
 }
 export interface State {}
 class Login extends React.Component<Props, State> {
+	constructor(props) {
+		super(props)
+		console.log(props)
+	}
 	render() {
 		return (
 			<Container>

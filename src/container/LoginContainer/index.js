@@ -18,17 +18,19 @@ export default class LoginContainer extends React.Component<Props, State> {
   pwdinput: any;
   login() {
     this.props.loginForm.validateForm();
-    if (this.props.loginForm.isValid) {
-      this.props.loginForm.clearStore();
-      this.props.navigation.navigate("Drawer");
-    } else {
-      Toast.show({
-        text: "Enter Valid Email & password!",
-        duration: 2000,
-        position: "top",
-        textStyle: { textAlign: "center" }
-      });
-    }
+    this.props.loginForm.clearStore();
+    this.props.navigation.navigate("Drawer");
+    // if (this.props.loginForm.isValid) {
+    //   this.props.loginForm.clearStore();
+    //   this.props.navigation.navigate("Drawer");
+    // } else {
+    //   Toast.show({
+    //     text: "Enter Valid Email & password!",
+    //     duration: 2000,
+    //     position: "top",
+    //     textStyle: { textAlign: "center" }
+    //   });
+    // }
   }
   render() {
     const form = this.props.loginForm;

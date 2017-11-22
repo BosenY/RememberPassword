@@ -5,11 +5,11 @@ import { observer, inject } from "mobx-react/native";
 import Home from "../../stories/screens/Home";
 import data from "./data";
 
-export interface Props {
+ interface Props {
 	navigation: any,
 	mainStore: any,
 }
-export interface State {}
+ interface State {}
 
 @inject("mainStore")
 @observer
