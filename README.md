@@ -1,41 +1,18 @@
-
-## React Native Seed v1.0.0
-
-### A [React Native](https://facebook.github.io/react-native/docs/getting-started.html) Starter Kit with [NativeBase](https://nativebase.io/) + [React Navigation](https://reactnavigation.org/) + [MobX](https://github.com/mobxjs/mobx) Apps (iOS & Android)
-
-*Brought to you by [GeekyAnts](https://geekyants.com/)*
+### repeatPassword
 
 
-## Get Started
+## src目录
 
-### 1. System Requirements
+store: 存放mobx所有store的目录
 
-* Globally installed [node](https://nodejs.org/en/)
+boot: 进行mobx store的封装以及绑定到视图上的操作
 
-* Globally installed [react-native CLI](https://facebook.github.io/react-native/docs/getting-started.html)
+App.js: 最后将整个app大组件输出的位置
 
+stories: 具体页面级组件-展示组件
 
-### 2. Installation
+container: 将展示组件赋值-容器组件
 
-On the command prompt run the following commands
-
-```sh
-$ git clone -b RN https://github.com/GeekyAnts/react-native-boilerplate-mobx-flow.git
-
-$ cd react-native-boilerplate-mobx-flow/
-
-$ npm install
-  or
-  yarn
-```
-
-### Run on iOS
-
-*	Run `react-native run-ios` in your terminal
-
-### Run on Android
-
-*	Run `react-native run-android` in your terminal
+theme: 预先写好的一些组件和样式
 
 
-For apps with more advance designs, please visit **[NativeBase Market](https://market.nativebase.io/)**.

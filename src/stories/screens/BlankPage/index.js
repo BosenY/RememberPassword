@@ -7,6 +7,10 @@ import styles from "./styles";
 // }
 export interface State {}
 class BlankPage extends React.Component<Props, State> {
+	constructor(props) {
+		super(props)
+		console.log(props)
+	}
 	render() {
 		const param = this.props.navigation.state.params;
 		return (

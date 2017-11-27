@@ -61,6 +61,13 @@ class Home extends React.Component <Props, State> {
                 </ListItem>
               ))}
           </List>
+          <List>
+          <ListItem
+                  key={"todoList"}
+                  onPress={() => this.props.navigation.navigate("BlankPage", {name: "todoList"})}>
+                  <Text>{"todoList"}</Text>
+                </ListItem>
+          </List>
         </Content>
       </Container>
     );
