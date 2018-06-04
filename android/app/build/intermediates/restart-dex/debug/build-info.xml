@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="25"
+    density="560dpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="352418400399557"
+    token="2713060932043311184"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="329" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="167" />
+    <task
+        name="verifier"
+        duration="40" />
+
+    <artifact
+        location="/Users/boseny/Documents/exercise/react native/repeatPassword/android/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="352418400399557"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/boseny/Documents/exercise/react native/repeatPassword/android/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

@@ -296,7 +296,8 @@ export default (variables = variable) => {
 			flexDirection: "row",
 			justifyContent: "flex-end",
 		},
-		backgroundColor: variables.toolbarDefaultBg,
+		// backgroundColor: variables.toolbarDefaultBg,
+		backgroundColor: "#2b85e4", //修改了Header默认的背景色
 		flexDirection: "row",
 		paddingHorizontal: 10,
 		justifyContent: "center",

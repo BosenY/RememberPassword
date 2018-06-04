@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 import {
   Container,
   Header,
@@ -12,66 +12,58 @@ import {
   Right,
   List,
   ListItem
-} from "native-base";
-
-import styles from "./styles";
-interface Props { //这里的只是一个接口的功能 为了确定下面使用的方法的类型 但是是any 所以注释掉也没关系啦~
-  navigation : any,
-  list : any
+} from 'native-base'
+import { FooterTabs } from '../../../components'
+import styles from './styles'
+interface Props {
+  //这里的只是一个接口的功能 为了确定下面使用的方法的类型 但是是any 所以注释掉也没关系啦~
+  navigation: any;
+  list: any;
 }
 interface State {
-  number: number
+  number: number;
 }
-class Home extends React.Component <Props, State> {
+class Home extends React.Component<Props, State> {
   constructor(props: any) {
-    super(props: any)
+    super((props: any))
     this.state = {
-      number: "1"
+      number: '1',
+      todo: {
+        item: 'todoList'
+      }
     }
   }
   render() {
     return (
       <Container style={styles.container}>
         <Header>
-          <Left>
-            <Button transparent>
-              <Icon
-                active
-                name="menu"
-                onPress={() => this.props.navigation.navigate("DrawerOpen")}/>
-            </Button>
-          </Left>
-          <Body>
-            <Title>Home</Title>
+          <Left style={{ flex: 1 }} />
+          <Body
+            style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
+          >
+            <Title>主页</Title>
           </Body>
-          <Right/>
+          <Right style={{ flex: 1 }} />
         </Header>
         <Content>
-          <List>
-            {this
-              .props
-              .list
-              .map((item, i) => (
-                <ListItem
-                  key={i}
-                  onPress={() => this.props.navigation.navigate("BlankPage", {name: {
-                    item
-                  }})}>
-                  <Text>{item}</Text>
-                </ListItem>
-              ))}
-          </List>
-          <List>
+          {/* <List>
           <ListItem
                   key={"todoList"}
-                  onPress={() => this.props.navigation.navigate("BlankPage", {name: "todoList"})}>
-                  <Text>{"todoList"}</Text>
-                </ListItem>
-          </List>
+                  onPress={() => this.props.navigation.navigate("BlankPage", {name:'todoList111'})}>
+                  <Text>{'todoList'}</Text>
+          </ListItem>
+          <ListItem
+                  key={"todo342List"}
+                  onPress={() => this.props.navigation.navigate("AddPassword", {name:'todoL3421'})}>
+                  <Text>{'todoList'}</Text>
+          </ListItem>
+          </List> */}
+          <Text>主页，pokemon的功能列表</Text>
         </Content>
+        <FooterTabs active="home" navigation={this.props.navigation} />
       </Container>
-    );
+    )
   }
 }
 
-export default Home;
+export default Home

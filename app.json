@@ -1,4 +1,5 @@
 {
-  "name": "ReactNativeSeed",
-  "displayName": "ReactNativeSeed"
+  "name": "Pokemon List",
+  "displayName": "Pokemon List",
+  "androidStatusBarColor": "#2b85e4"
 }

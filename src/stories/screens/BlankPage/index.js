@@ -16,21 +16,19 @@ class BlankPage extends React.Component<Props, State> {
 		return (
 			<Container style={styles.container}>
 				<Header>
-					<Left>
+					<Left style={{ flex: 1 }}>
 						<Button transparent onPress={() => this.props.navigation.goBack()}>
 							<Icon name="ios-arrow-back" />
 						</Button>
 					</Left>
-
-					<Body style={{ flex: 3 }}>
-						<Title>{param ? param.name.item : "Blank Page"}</Title>
+					<Body style={{ flex: 1,  justifyContent: 'center', alignItems: 'center' }}>
+						<Title>{param ? param.name.item ? param.name.item : param.name  : "Blank Page"}</Title>
 					</Body>
-
-					<Right />
+					<Right style={{ flex: 1 }}>
+        			</Right>
 				</Header>
-
 				<Content padder>
-					<Text>{param !== undefined ? param.name.item : "Create Something Awesome . . ."}</Text>
+					<Text>{param !== undefined ? param.name.item ? param.name.item : param.name : "Create Something Awesome . . ."}</Text>
 				</Content>
 			</Container>
 		);

@@ -1,0 +1,20 @@
+export default {
+  Grass: '草',
+  Poison: '毒',
+  Fire: '火',
+  Dragon: '龙',
+  Flying: '飞行',
+  Water: '水',
+  Bug: '虫',
+  Normal: '正常',
+  Dark: '恶',
+  Electric: '电',
+  Ice: '冰',
+  Psychic: '超能力',
+  Steel: '钢',
+  Ground: '地面',
+  Fairy: '妖精',
+  Fighting: '格斗',
+  Rock: '岩石',
+  Ghost: '幽灵'
+}
