@@ -1,20 +1,4 @@
-import * as React from 'react'
-import {
-  Container,
-  Header,
-  Title,
-  Content,
-  Text,
-  Button,
-  Icon,
-  Left,
-  Body,
-  Right,
-  List,
-  ListItem
-} from 'native-base'
-import { View, Image, NativeModules, StatusBar } from 'react-native'
-let imgList = [
+export default [
   { id: 0, uri: require('../../../images/pokemonList/bulbasaur.jpg') },
   { id: 1, uri: require('../../../images/pokemonList/ivysaur.jpg') },
   { id: 2, uri: require('../../../images/pokemonList/venusaur.jpg') },
@@ -97,7 +81,7 @@ let imgList = [
   { id: 79, uri: require('../../../images/pokemonList/slowbro.jpg') },
   { id: 80, uri: require('../../../images/pokemonList/magnemite.jpg') },
   { id: 81, uri: require('../../../images/pokemonList/magneton.jpg') },
-  { id: 82, uri: require("../../../images/pokemonList/farfetchd.jpg") },
+  { id: 82, uri: require("../../../images/pokemonList/farfetch'd.jpg") },
   { id: 83, uri: require('../../../images/pokemonList/doduo.jpg') },
   { id: 84, uri: require('../../../images/pokemonList/dodrio.jpg') },
   { id: 85, uri: require('../../../images/pokemonList/seel.jpg') },
@@ -136,7 +120,7 @@ let imgList = [
   { id: 118, uri: require('../../../images/pokemonList/seaking.jpg') },
   { id: 119, uri: require('../../../images/pokemonList/staryu.jpg') },
   { id: 120, uri: require('../../../images/pokemonList/starmie.jpg') },
-  { id: 121, uri: require('../../../images/pokemonList/mr-mime.jpg') },
+  { id: 121, uri: require('../../../images/pokemonList/mr. mime.jpg') },
   { id: 122, uri: require('../../../images/pokemonList/scyther.jpg') },
   { id: 123, uri: require('../../../images/pokemonList/jynx.jpg') },
   { id: 124, uri: require('../../../images/pokemonList/electabuzz.jpg') },
@@ -453,7 +437,7 @@ let imgList = [
   { id: 435, uri: require('../../../images/pokemonList/bronzor.jpg') },
   { id: 436, uri: require('../../../images/pokemonList/bronzong.jpg') },
   { id: 437, uri: require('../../../images/pokemonList/bonsly.jpg') },
-  { id: 438, uri: require('../../../images/pokemonList/mime-jr.jpg') },
+  { id: 438, uri: require('../../../images/pokemonList/mime jr..jpg') },
   { id: 439, uri: require('../../../images/pokemonList/happiny.jpg') },
   { id: 440, uri: require('../../../images/pokemonList/chatot.jpg') },
   { id: 441, uri: require('../../../images/pokemonList/spiritomb.jpg') },
@@ -683,7 +667,7 @@ let imgList = [
   { id: 665, uri: require('../../../images/pokemonList/vivillon.jpg') },
   { id: 666, uri: require('../../../images/pokemonList/litleo.jpg') },
   { id: 667, uri: require('../../../images/pokemonList/pyroar.jpg') },
-  { id: 668, uri: require('../../../images/pokemonList/flabebe.jpg') },
+  { id: 668, uri: require('../../../images/pokemonList/flabébé.jpg') },
   { id: 669, uri: require('../../../images/pokemonList/floette.jpg') },
   { id: 670, uri: require('../../../images/pokemonList/florges.jpg') },
   { id: 671, uri: require('../../../images/pokemonList/skiddo.jpg') },
@@ -695,7 +679,7 @@ let imgList = [
   { id: 677, uri: require('../../../images/pokemonList/meowstic.jpg') },
   { id: 678, uri: require('../../../images/pokemonList/honedge.jpg') },
   { id: 679, uri: require('../../../images/pokemonList/doublade.jpg') },
-  { id: 680, uri: require('../../../images/pokemonList/aegislash-blade.jpg') },
+  { id: 680, uri: require('../../../images/pokemonList/aegislash.jpg') },
   { id: 681, uri: require('../../../images/pokemonList/spritzee.jpg') },
   { id: 682, uri: require('../../../images/pokemonList/aromatisse.jpg') },
   { id: 683, uri: require('../../../images/pokemonList/swirlix.jpg') },
@@ -786,7 +770,7 @@ let imgList = [
   { id: 768, uri: require('../../../images/pokemonList/sandygast.jpg') },
   { id: 769, uri: require('../../../images/pokemonList/palossand.jpg') },
   { id: 770, uri: require('../../../images/pokemonList/pyukumuku.jpg') },
-  { id: 771, uri: require('../../../images/pokemonList/type-null.jpg') },
+  { id: 771, uri: require('../../../images/pokemonList/type: null.jpg') },
   { id: 772, uri: require('../../../images/pokemonList/silvally.jpg') },
   { id: 773, uri: require('../../../images/pokemonList/minior.jpg') },
   { id: 774, uri: require('../../../images/pokemonList/komala.jpg') },
@@ -799,10 +783,10 @@ let imgList = [
   { id: 781, uri: require('../../../images/pokemonList/jangmo-o.jpg') },
   { id: 782, uri: require('../../../images/pokemonList/hakamo-o.jpg') },
   { id: 783, uri: require('../../../images/pokemonList/kommo-o.jpg') },
-  { id: 784, uri: require('../../../images/pokemonList/tapukoko.jpg') },
-  { id: 785, uri: require('../../../images/pokemonList/tapulele.jpg') },
-  { id: 786, uri: require('../../../images/pokemonList/tapubulu.jpg') },
-  { id: 787, uri: require('../../../images/pokemonList/tapufini.jpg') },
+  { id: 784, uri: require('../../../images/pokemonList/tapu koko.jpg') },
+  { id: 785, uri: require('../../../images/pokemonList/tapu lele.jpg') },
+  { id: 786, uri: require('../../../images/pokemonList/tapu bulu.jpg') },
+  { id: 787, uri: require('../../../images/pokemonList/tapu fini.jpg') },
   { id: 788, uri: require('../../../images/pokemonList/cosmog.jpg') },
   { id: 789, uri: require('../../../images/pokemonList/cosmoem.jpg') },
   { id: 790, uri: require('../../../images/pokemonList/solgaleo.jpg') },
@@ -818,89 +802,3 @@ let imgList = [
   { id: 800, uri: require('../../../images/pokemonList/magearna.jpg') },
   { id: 801, uri: require('../../../images/pokemonList/marshadow.jpg') }
 ]
-const { StatusBarManager } = NativeModules
-// import { observer, inject } from "mobx-react/native"
-import { FooterTabs } from '../../../components'
-import styles from './styles'
-interface Props {
-  //这里的只是一个接口的功能 为了确定下面使用的方法的类型 但是是any 所以注释掉也没关系啦~
-  navigation: any;
-  pokelistList: any;
-}
-interface State {
-  number: number;
-}
-class PokeList extends React.Component<Props, State> {
-  constructor(props: any) {
-    super((props: any))
-    this.state = {
-      number: '1',
-      todo: {
-        item: 'todoList'
-      }
-    }
-  }
-  componentDidMount() {
-    console.log(JSON.stringify(imgList))
-    //   StatusBarManager.setColor(processColor('#ff0000'), false)
-  }
-  render() {
-    let { pokelistStore } = this.props
-    // let list = pokelistList.list
-    console.log(this.props)
-    return (
-      <Container style={styles.container}>
-        <Header>
-          {/* <StatusBar
-         backgroundColor="#2b85e4"
-         barStyle="light-content"
-        /> */}
-          <Left style={{ flex: 1 }} />
-          <Body
-            style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
-          >
-            <Title>宝可梦列表</Title>
-          </Body>
-          <Right style={{ flex: 1 }} />
-        </Header>
-        <Content>
-          <List>
-            {pokelistStore.list
-              .map(item =>
-                Object.assign({}, item, { name: item.name.toLowerCase() })
-              )
-              .map((item, index) => {
-                {
-                  /* let uri = require('../../../images/pokemonList/' +
-                  item.name +
-                  '.jpg') */
-                }
-                return (
-                  <ListItem
-                    key={index}
-                    onPress={() => {
-                      {
-                        console.log(item)
-                      }
-                    }}
-                  >
-                    <Text>{index + 1}.</Text>
-                    <Image
-                      style={styles.pokeListImg}
-                      source={imgList[index].uri}
-                    />
-                    {/* <Text>{imgList[index].uri}</Text> */}
-                    <Text>{item.cnName}</Text>
-                    <Text>{item.name}</Text>
-                  </ListItem>
-                )
-              })}
-          </List>
-        </Content>
-        <FooterTabs active="list" navigation={this.props.navigation} />
-      </Container>
-    )
-  }
-}
-
-export default PokeList

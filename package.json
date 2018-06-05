@@ -29,8 +29,7 @@
     "iphone8P": "react-native run-ios --simulator='iPhone 8 Plus'",
     "iphoneX": "react-native run-ios --simulator='iPhone X'",
     "test": "yarn jest && flow && eslint .",
-    "jest": "node node_modules/jest/bin/jest.js",
-    "precommit": "yarn test"
+    "jest": "node node_modules/jest/bin/jest.js"
   },
   "jest": {
     "preset": "react-native",
@@ -46,6 +45,7 @@
     "native-base": "2.3.3",
     "react": "16.0.0",
     "react-native": "0.50.3",
+    "react-native-fast-image": "^4.0.14",
     "react-native-vector-icons": "^4.4.2",
     "react-navigation": "1.0.0-beta.19"
   }
