@@ -14,6 +14,7 @@ import PasswordList from './container/PasswordListContainer'
 import PokeList from './container/PokeListContaner'
 import About from './stories/screens/About'
 import PasswordDetail from './stories/screens/PasswordDetail'
+import PokemonDetail from './container/PokemonDetailContainer'
 
 import { StatusBar } from 'react-native'
 const App = TabNavigator(
@@ -25,7 +26,7 @@ const App = TabNavigator(
     },
     BlankPage: { screen: BlankPage },
     // AddPassword: { screen: AddPassword },
-    PokemonDetail: { screen: PasswordDetail }
+    PokemonDetail: { screen: PokemonDetail }
 
     // Drawer: { screen: Drawer },
   },

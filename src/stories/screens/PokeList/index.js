@@ -13,16 +13,21 @@ import {
   List,
   ListItem
 } from 'native-base'
-import { View, Image, NativeModules, StatusBar, FlatList } from 'react-native'
+import {
+  View,
+  Image,
+  NativeModules,
+  StatusBar,
+  FlatList,
+  TouchableOpacity,
+  TextInput
+} from 'react-native'
 import imgList from '../../../utils/imgList.js'
-const { StatusBarManager } = NativeModules
-// import { observer, inject } from "mobx-react/native"
 import { FooterTabs } from '../../../components'
 import styles from './styles'
 interface Props {
-  //这里的只是一个接口的功能 为了确定下面使用的方法的类型 但是是any 所以注释掉也没关系啦~
   navigation: any;
-  pokelistList: any;
+  pokelistStore: any;
 }
 interface State {
   number: number;
@@ -34,13 +39,11 @@ class PokeList extends React.Component<Props, State> {
       number: '1',
       todo: {
         item: 'todoList'
-      }
+      },
+      text: ''
     }
   }
-  componentDidMount() {
-    // console.log(JSON.stringify(imgList))
-    //   StatusBarManager.setColor(processColor('#ff0000'), false)
-  }
+
   renderType(types, cnTypes) {
     return cnTypes.map((item, index) => (
       <View key={index} style={styles[types[index]]}>
@@ -48,8 +51,10 @@ class PokeList extends React.Component<Props, State> {
       </View>
     ))
   }
-  toDetail(id) {
-    console.log(id)
+  toDetail(id, item) {
+    let { pokelistStore } = this.props
+    pokelistStore.setSelect(id, item)
+    this.props.navigation.navigate('PokemonDetail')
   }
 
   render() {
@@ -57,21 +62,33 @@ class PokeList extends React.Component<Props, State> {
     console.log(list)
     return (
       <Container style={styles.container}>
+        <StatusBar backgroundColor="#ff0000" />
         <Header>
           <Left style={{ flex: 1 }} />
           <Body
             style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
           >
-            <Title>宝可梦列表</Title>
+            <Title style={{ color: '#ffffff' }}>宝可梦列表</Title>
           </Body>
           <Right style={{ flex: 1 }} />
         </Header>
         <Content>
-          <List>
+          <TextInput
+            style={styles.searchInput}
+            value={this.state.text}
+            onChangeText={text => this.setState({ text })}
+            placeholder="请输入宝可梦的名称/属性/序号等"
+          />
+          <List style={styles.List}>
             <FlatList
               data={imgList}
               renderItem={({ item, index }) => (
-                <ListItem key={index} onpress={this.toDetail(index + 1)}>
+                <ListItem
+                  key={index}
+                  onPress={() => {
+                    this.toDetail(index + 1, item)
+                  }}
+                >
                   <Text>{item.key + 1}.</Text>
                   <Image
                     resizeMode="contain"

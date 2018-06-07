@@ -5,32 +5,32 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="352418400399557"
-    token="2713060932043311184"
+    timestamp="7016107400558"
+    token="2329714286712193688"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="329" />
+        duration="869" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="167" />
+        duration="717" />
     <task
         name="verifier"
-        duration="40" />
+        duration="218" />
 
     <artifact
-        location="/Users/boseny/Documents/exercise/react native/repeatPassword/android/app/build/outputs/apk/app-debug.apk"
+        location="/Users/boseny/Documents/exercise/react native/pokemon-react-naitve/android/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="352418400399557"
+        timestamp="7016107400558"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/boseny/Documents/exercise/react native/repeatPassword/android/app/build/outputs/apk/app-debug.apk"
+            location="/Users/boseny/Documents/exercise/react native/pokemon-react-naitve/android/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
 

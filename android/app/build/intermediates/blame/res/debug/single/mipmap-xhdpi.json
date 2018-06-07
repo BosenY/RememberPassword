@@ -2,9 +2,5 @@
     {
         "merged": "/Users/boseny/Documents/exercise/react native/pokemon-react-naitve/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
         "source": "/Users/boseny/Documents/exercise/react native/pokemon-react-naitve/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/boseny/Documents/exercise/react native/repeatPassword/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
-        "source": "/Users/boseny/Documents/exercise/react native/repeatPassword/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     }
 ]
