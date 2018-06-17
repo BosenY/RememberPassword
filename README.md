@@ -8,7 +8,7 @@ store: 存放 mobx 所有 store 的目录
 
 boot: 进行 mobx store 的封装以及绑定到视图上的操作
 
-App.js: 最后将整个 app 大组件输出的位置
+App.js: 最后将整个 app 大组件输出的位置
 
 stories: 具体页面级组件-展示组件
 
