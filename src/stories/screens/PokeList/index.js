@@ -20,7 +20,8 @@ import {
   StatusBar,
   FlatList,
   TouchableOpacity,
-  TextInput
+  TextInput,
+  Dimensions
 } from 'react-native'
 import imgList from '../../../utils/imgList.js'
 import { FooterTabs } from '../../../components'
@@ -40,10 +41,16 @@ class PokeList extends React.Component<Props, State> {
       todo: {
         item: 'todoList'
       },
-      text: ''
+      text: '',
+      displayList: []
     }
   }
-
+  componentDidMount() {
+    let { list } = this.props.pokelistStore
+    this.setState({
+      displayList: list.slice(0, 19)
+    })
+  }
   renderType(types, cnTypes) {
     return cnTypes.map((item, index) => (
       <View key={index} style={styles[types[index]]}>
@@ -54,9 +61,18 @@ class PokeList extends React.Component<Props, State> {
   toDetail(id, item) {
     this.props.navigation.navigate('PokemonDetail')
   }
+  LazyLoadList() {
+    console.log('懒加载')
+    let { list } = this.props.pokelistStore
+    if (this.state.displayList.length < 802) {
+      this.setState({
+        displayList: list.slice(0, this.state.displayList.length + 20)
+      })
+    }
+  }
 
   render() {
-    let { list } = this.props.pokelistStore
+    let list = this.state.displayList
     console.log(list)
     return (
       <Container style={styles.container}>
@@ -79,7 +95,9 @@ class PokeList extends React.Component<Props, State> {
           />
           <List style={styles.List}>
             <FlatList
-              data={imgList}
+              data={list}
+              onEndReachedThreshold={0}
+              onEndReached={() => this.LazyLoadList()}
               renderItem={({ item, index }) => (
                 <ListItem
                   key={index}
@@ -87,15 +105,14 @@ class PokeList extends React.Component<Props, State> {
                     this.toDetail(index + 1, item)
                   }}
                 >
-                  <Text>{item.key + 1}.</Text>
+                  <Text>{index + 1}.</Text>
                   <Image
                     resizeMode="contain"
                     style={styles.pokeListImg}
-                    source={item.uri}
+                    source={imgList[index].uri}
                   />
-                  <Text style={styles.itemListName}>{list[index].cnName}</Text>
-
-                  {this.renderType(list[index].type, list[index].cnTypes)}
+                  <Text style={styles.itemListName}>{item.cnName}</Text>
+                  {this.renderType(item.type, item.cnTypes)}
                 </ListItem>
               )}
             />

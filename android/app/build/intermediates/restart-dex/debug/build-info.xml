@@ -5,29 +5,29 @@
     density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="100953929893"
+    timestamp="378835142879"
     token="2329714286712193688"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="3776" />
+        duration="2148" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1305" />
+        duration="1294" />
     <task
         name="verifier"
-        duration="276" />
+        duration="88" />
 
     <artifact
         location="/Users/boseny/Documents/exercise/react native/pokemon-react-naitve/android/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="100953929893"
+        timestamp="378835142879"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/boseny/Documents/exercise/react native/pokemon-react-naitve/android/app/build/outputs/apk/app-debug.apk"
