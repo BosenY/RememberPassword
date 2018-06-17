@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		GdehmVq/TK96N85ktNWtQ7lulvk=
+		jAwpBfFo3Zv6NYaEFYvjEbBBmzo=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -71,7 +71,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Fpk5AT/pXxcQ4cj9dqOxvTDPXi4=
+		yDiEAPLNBRJf4wJqelYF1Kzo6J0=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -107,7 +107,7 @@
 		</data>
 		<key>PlugIns/ReactNativeSeedTests.xctest/ReactNativeSeedTests</key>
 		<data>
-		S6btjJo/DKQ7ktbShSfuLwwZwZM=
+		JGzDcxnV6h4ymTQWffX1vHF4VDQ=
 		</data>
 		<key>PlugIns/ReactNativeSeedTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
@@ -140,11 +140,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GdehmVq/TK96N85ktNWtQ7lulvk=
+			jAwpBfFo3Zv6NYaEFYvjEbBBmzo=
 			</data>
 			<key>hash2</key>
 			<data>
-			YyBcNfin7+qZtdVtJxV5TTpi78r8Ivd0ijC19x9m9LQ=
+			T/NEjOxx8/rw+1b0AxDysWGi+s/zV7IDKZ6vc//+IR0=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -384,11 +384,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S6btjJo/DKQ7ktbShSfuLwwZwZM=
+			JGzDcxnV6h4ymTQWffX1vHF4VDQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			l2h81ZQPLbS/00WYfXfWaAbNar+sYllWd8yyqQRQgpI=
+			auWlIaWigD1GqO1PTCyaP8d/c+R/sOUBgapTICdQP78=
 			</data>
 		</dict>
 		<key>PlugIns/ReactNativeSeedTests.xctest/_CodeSignature/CodeResources</key>

@@ -1,7 +1,4 @@
-#Thu Jun 07 15:00:31 CST 2018
-base.0=/Users/boseny/Documents/exercise/react native/pokemon-react-naitve/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3fbcde09d79a7c52d12fd3a651aee86b63822746
-renamed.1=classes2.dex
+#Sun Jun 17 09:09:09 CST 2018
+base.0=/Users/boseny/Documents/exercise/react native/pokemon-react-naitve/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
-file.1=/Users/boseny/Documents/exercise/react native/pokemon-react-naitve/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_21bd7a702f1aa7cfc735aa94e6cc1ad727bd3a25/classes.dex
-base.1=/Users/boseny/Documents/exercise/react native/pokemon-react-naitve/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_21bd7a702f1aa7cfc735aa94e6cc1ad727bd3a25
-file.0=/Users/boseny/Documents/exercise/react native/pokemon-react-naitve/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3fbcde09d79a7c52d12fd3a651aee86b63822746/classes.dex
+file.0=/Users/boseny/Documents/exercise/react native/pokemon-react-naitve/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

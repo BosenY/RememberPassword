@@ -52,8 +52,6 @@ class PokeList extends React.Component<Props, State> {
     ))
   }
   toDetail(id, item) {
-    let { pokelistStore } = this.props
-    pokelistStore.setSelect(id, item)
     this.props.navigation.navigate('PokemonDetail')
   }
 
