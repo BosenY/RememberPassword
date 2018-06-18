@@ -12,13 +12,15 @@ import {
   Right,
   Body
 } from 'native-base'
-
+import { observer, inject } from 'mobx-react/native'
 import styles from './styles'
 export interface State {}
 interface Props {
   navigation: any;
   pokelistStore: any;
 }
+// @inject('pokelistStore')
+@observer
 class PokemonDetailPage extends React.Component<Props, State> {
   constructor(props: any) {
     super((props: any))
@@ -26,10 +28,13 @@ class PokemonDetailPage extends React.Component<Props, State> {
       title: ''
     }
   }
-
-  //   shouldComponentUpdate(newProps, newState) {
-  //     console.log(newProps)
-  //   }
+  addnum() {
+    this.props.pokelistStore.AddNum()
+  }
+  reducenum() {
+    this.props.pokelistStore.ReduceNum()
+    console.log(this.props.pokelistStore.num)
+  }
   render() {
     console.log(this.props)
     return (
@@ -43,12 +48,22 @@ class PokemonDetailPage extends React.Component<Props, State> {
           <Body
             style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
           >
-            <Title>{this.props.pokelistStore.selectedId}</Title>
+            <Title>{this.props.pokelistStore.num}</Title>
           </Body>
           <Right style={{ flex: 1 }} />
         </Header>
         <Content padder>
-          <Text>宝可梦详情</Text>
+          <Text>{this.props.pokelistStore.newnum}</Text>
+          <Button rounded light onPress={() => this.reducenum()}>
+            <Text>{this.props.pokelistStore.newnum}</Text>
+          </Button>
+          <Button rounded onPress={() => this.reducenum()}>
+            <Text>-</Text>
+          </Button>
+          {/* <Button onPress={() => this.reducenum()}>
+            {' '}
+            <Text>-</Text>{' '}
+          </Button> */}
         </Content>
       </Container>
     )

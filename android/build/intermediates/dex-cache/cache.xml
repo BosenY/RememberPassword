@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="66b7556716653fb6d7d62a81c2f9efc671f90f6d">
+        sha1="4cd2329412351554abf0085821728c00b1fb2290">
         <dex dex="/Users/boseny/Documents/exercise/react native/pokemon-react-naitve/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3fbcde09d79a7c52d12fd3a651aee86b63822746/classes.dex" />
     </item>
     <item
@@ -205,7 +205,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="f4a36d06f0383ed52d2e936c48ed750c53d6477e">
+        sha1="b09d353018e59206fdca0102987d36710f64347a">
         <dex dex="/Users/boseny/Documents/exercise/react native/pokemon-react-naitve/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_21bd7a702f1aa7cfc735aa94e6cc1ad727bd3a25/classes.dex" />
     </item>
 

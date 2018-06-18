@@ -11,7 +11,7 @@ interface Props {
 interface State {}
 
 @inject('pokelistStore')
-@observer
+// @observer
 export default class pokemonDetailContainer extends React.Component<
   Props,
   State
