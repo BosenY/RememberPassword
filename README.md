@@ -1,6 +1,6 @@
-# pokemonapi
+# pokemonapi-react-native
 
-一个使用 mobx、react-navigation 的 react-native 项目
+一个使用 mobx、react-navigation 的 react-native 项目，数据和图片全是本地的
 
 ## src 目录
 
